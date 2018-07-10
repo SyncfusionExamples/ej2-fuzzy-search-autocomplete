@@ -11,7 +11,6 @@ var AppComponent = (function () {
     function AppComponent() {
         var _this = this;
         this.name = 'Angular';
-        //public sportsData: string[] = ['Badminton', 'Basketball', 'Cricket', 'Football', 'Golf', 'Gymnastics', 'Hockey', 'Rugby', 'Snooker', 'Tennis'];
         this.booksData = [
             { BookName: 'Support Vector Machines Succinctly', BookID: 'BOOK1' }, { BookName: 'Scala Succinctly', BookID: 'BOOK2' },
             { BookName: 'Application Security in .NET Succinctly', BookID: 'BOOK3' },
@@ -63,8 +62,9 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "<div style=\"width: 300px;margin: 0px auto;width: 300px;padding-top: 40px;\">\n  <ejs-autocomplete id='books' [dataSource]='booksData'[fields]='fields' (filtering)='onFiltering($event)' [placeholder]='watermark'></ejs-autocomplete></div>",
-        // include the material theme to AutoComplete
+        // specifies the template string for the autocomplete component.
+        template: "<div style=\"width: 300px;margin: 0px auto;width: 300px;padding-top: 40px;\">\n    <ejs-autocomplete id='books' [dataSource]='booksData' [fields]='fields' (filtering)='onFiltering($event)' [placeholder]='watermark'></ejs-autocomplete></div>",
+        // include the material theme in autocomplete.
         styleUrls: ['../../node_modules/@syncfusion/ej2-dropdowns/styles/material.css'],
         encapsulation: core_1.ViewEncapsulation.None
     })

@@ -16,8 +16,8 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule, ej2_ng_dropdowns_1.AutoCompleteModule],
-        declarations: [app_component_1.AppComponent],
+        imports: [platform_browser_1.BrowserModule],
+        declarations: [app_component_1.AppComponent, ej2_ng_dropdowns_1.AutoCompleteComponent],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);
